@@ -1,0 +1,200 @@
+body{
+    background-color: white;
+}
+.navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* justify content x axis  */
+}
+.nav-link:hover{
+    text-shadow: 10px 10px 10px 10px #EE2F47;
+    
+  
+    
+}    
+
+
+.nav-link{
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;      
+    padding: 20px;
+    border-radius: 5px;
+    
+}
+.menu button{
+   border-radius: 50px;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   background-color: #EE2F47;
+   color: white;
+   height: 20px 20px;
+   width: 20px 20px;
+
+}
+.menu button:hover{
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid #EE2F47;
+    color: #EE2F47;
+}
+.hero h1{
+    margin-top: 300px;
+   color: white;
+   font-family:  Arial, sans-serif;
+   font-weight: bold;
+   font-size: 26px;
+
+}
+.hero P{
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+}
+.hero{
+    background: url("https://img.freepik.com/premium-photo/grocery-super-shop-filled-with-variety-colorful-products_752325-130316.jpg?size=626&ext=jpg") no-repeat center/cover;
+    padding: 100px;
+    text-align: center;
+
+    
+}
+.font{
+font-family: cursive;
+color: black;
+}
+.products-grid{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.products{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.products h2{
+    text-align: center;
+    color: #EE2F47;
+    font-family: sans-serif;
+    font-size: 26px;
+    padding: 20px;
+}
+
+.product-card h3{
+    color: black;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+.product-card h4{
+    color: #7A7A7A;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+.product-card{
+    
+    background-color: white;
+    border: 1px solid #7A7A7A ;
+    padding: 30px;
+    
+    border-radius: 8px;
+
+    box-sizing: border-box;
+    
+}
+.product-card button{
+
+    border-radius: 50px;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   background-color: #EE2F47;
+   color: white;
+   height: 20px 20px;
+   width: 20px 20px;
+
+}
+.product-card button:hover{
+
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid #EE2F47;
+    color: #EE2F47;
+
+}
+.product-card p{
+    color: #7A7A7A;
+    font-size: 14px;
+}
+
+
+.product-card img{
+    max-width: 100%;
+    border-radius: 8px;
+    
+}
+.product-card:hover{
+    box-shadow: 0px 0px 1px 1px #EE2F47;
+    
+}
+.contents{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #EE2F47;
+
+}
+.contents h2{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 26px;
+    padding: 20px;
+    font-weight: bold;
+}
+.contents-grid{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.contents-card{
+    
+    background-color: white;
+    border: 1px solid #7A7A7A ;
+    padding: 10px;
+    
+    border-radius: 8px;
+    margin: 10px;
+    box-sizing: border-box;
+    
+}
+.contents-card h3{
+    color: black;
+    font-size: 26px;
+    font-family: sans-serif;
+}
+.contents-card h4{
+    color: #7A7A7A;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+.Content-header-font{
+    font-size: small;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.contents-card:hover{
+    box-shadow: 0px 0px 2px 2px #5f5656;
+    
+  
+    
+}    
