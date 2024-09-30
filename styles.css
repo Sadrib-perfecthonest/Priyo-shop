@@ -246,34 +246,7 @@ color: black;
         display: none;
         /*  grid means dividing a web page into columns and rown building a structure grid-template-columns: repeat(3, 1fr); grid template columns defines column structure of a grid by specifying the number and size of columns here 3 means we are creating 3 equal width columns each taking 1 fraction(portion) available space */
         
-        .menu-toggle:not(:checked) + .hamburger + .nav-link {
-            display: none;
-        }
-        
-        /* Show the dropdown when checkbox is checked */
-        .menu-toggle:checked + .hamburger + .nav-link {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            background-color: white;
-            width: 100%;
-            padding-right: 20px;
-            text-align: center;
-            z-index: 1;
-        }
-        
-        .nav-link a {
-            padding: 15px;
-            border-bottom: 1px solid #ccc;
-        }
-        
-        .nav-link a:last-child {
-            border-bottom: none;
-        }
-                
-    
+       
   
   }
 }
@@ -294,5 +267,15 @@ color: black;
 .menu-toggle{
     display: none;
 }
+.menu-toggle:checked + .nav-link {
+    display: flex;
+    flex-direction: column;
+    
+}
 
+.animated-box {
+     
+    transition: transform 7s ease; /* Transition effect for transform property */
+    
+}
 
