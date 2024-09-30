@@ -7,13 +7,7 @@ body{
     justify-content: space-between;
     /* justify content x axis  */
 }
-.nav-link:hover{
-    text-shadow: 10px 10px 10px 10px #EE2F47;
-    
-  
-    
-}    
-
+ 
 
 .nav-link{
 
@@ -72,6 +66,29 @@ color: black;
     justify-content: center;
     margin-top: 20px;
     
+}
+
+@media(max-width: 768px){
+    .products-grid{
+        gap: 20px;
+        display: grid;
+        /*  grid means dividing a web page into columns and rown building a structure grid-template-columns: repeat(3, 1fr); grid template columns defines column structure of a grid by specifying the number and size of columns here 3 means we are creating 3 equal width columns each taking 1 fraction(portion) available space */
+        grid-template-columns: repeat(2,1fr);
+    
+  
+  }
+  
+}
+@media(max-width: 500px){
+    .products-grid{
+        gap: 20px;
+        display: grid;
+        /*  grid means dividing a web page into columns and rown building a structure grid-template-columns: repeat(3, 1fr); grid template columns defines column structure of a grid by specifying the number and size of columns here 3 means we are creating 3 equal width columns each taking 1 fraction(portion) available space */
+        grid-template-columns: 1fr;
+    
+  
+  }
+  
 }
 .products{
     text-align: center;
@@ -157,11 +174,14 @@ color: black;
     padding: 20px;
     font-weight: bold;
 }
+
+
 .contents-grid{
     gap: 20px;
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    grid-template-columns: repeat(2,1fr);
     
 }
 .contents-card{
@@ -198,3 +218,81 @@ color: black;
   
     
 }    
+@media(max-width: 768px){
+    .contents-grid{
+        gap: 20px;
+        display: grid;
+        /*  grid means dividing a web page into columns and rown building a structure grid-template-columns: repeat(3, 1fr); grid template columns defines column structure of a grid by specifying the number and size of columns here 3 means we are creating 3 equal width columns each taking 1 fraction(portion) available space */
+        grid-template-columns: repeat(2,1fr);
+        
+    
+  
+  }
+}
+  @media(max-width: 500px){
+    .contents-grid{
+        gap: 20px;
+        display: grid;
+        /*  grid means dividing a web page into columns and rown building a structure grid-template-columns: repeat(3, 1fr); grid template columns defines column structure of a grid by specifying the number and size of columns here 3 means we are creating 3 equal width columns each taking 1 fraction(portion) available space */
+        grid-template-columns: 1fr;
+    
+  
+  }
+  
+}
+@media(max-width: 768px){
+    .nav-link{
+        gap: 20px;
+        display: none;
+        /*  grid means dividing a web page into columns and rown building a structure grid-template-columns: repeat(3, 1fr); grid template columns defines column structure of a grid by specifying the number and size of columns here 3 means we are creating 3 equal width columns each taking 1 fraction(portion) available space */
+        
+        .menu-toggle:not(:checked) + .hamburger + .nav-link {
+            display: none;
+        }
+        
+        /* Show the dropdown when checkbox is checked */
+        .menu-toggle:checked + .hamburger + .nav-link {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: white;
+            width: 100%;
+            padding-right: 20px;
+            text-align: center;
+            z-index: 1;
+        }
+        
+        .nav-link a {
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .nav-link a:last-child {
+            border-bottom: none;
+        }
+                
+    
+  
+  }
+}
+
+@media(min-width: 769px){
+.hamburger{
+        gap: 20px;
+        display: none;
+       width: 500px;
+        /*  grid means dividing a web page into columns and rown building a structure grid-template-columns: repeat(3, 1fr); grid template columns defines column structure of a grid by specifying the number and size of columns here 3 means we are creating 3 equal width columns each taking 1 fraction(portion) available space */
+        
+        
+    
+  
+  }
+
+}
+.menu-toggle{
+    display: none;
+}
+
+
