@@ -269,7 +269,9 @@ color: black;
 }
 .menu-toggle:checked + .nav-link {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
     
 }
 
@@ -279,3 +281,46 @@ color: black;
     
 }
 
+.video-container {
+    width: 100%; /* Set width to 100% */
+    max-width: 1300px; /* Optional: set a max width for larger screens */
+    margin: 20px auto; /* Center the video */
+}
+
+.video-container iframe {
+    width: 100%; /* Make the iframe fill the container */
+    height: 100%; /* Maintain aspect ratio */
+    aspect-ratio: 16 / 9; /* Maintain aspect ratio (16:9) */
+    border: none; /* Remove default border */
+}
+
+.contents-below{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #EE2F47;
+    padding: 10px ;
+
+}
+.contents-below h2{
+    text-align: start;
+    color: white;
+    font-family: sans-serif;
+    font-size: 26px;
+    padding: 20px;
+    font-weight: bold;
+}
+.contents-below button{
+border-radius: 30px;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   background-color:white;
+   color:  #EE2F47;
+   height: 40px 40px;
+   width: 60px 60px;
+   display: grid;
+    
+   
+   
+    
+}
