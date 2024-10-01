@@ -278,8 +278,34 @@ color: black;
 .animated-box {
      
     transition: transform 7s ease; /* Transition effect for transform property */
-    
+     display: grid;
+     grid-template-columns: repeat(3,1fr); 
 }
+
+@media(max-width: 768px){
+    .animated-box{
+        gap: 20px;
+        display: grid;
+        /*  grid means dividing a web page into columns and rown building a structure grid-template-columns: repeat(3, 1fr); grid template columns defines column structure of a grid by specifying the number and size of columns here 3 means we are creating 3 equal width columns each taking 1 fraction(portion) available space */
+        grid-template-columns: repeat(3,1fr);
+        
+    
+  
+  }
+}
+@media(max-width: 500px){
+    .animated-box{
+        gap: 20px;
+        display: grid;
+        /*  grid means dividing a web page into columns and rown building a structure grid-template-columns: repeat(3, 1fr); grid template columns defines column structure of a grid by specifying the number and size of columns here 3 means we are creating 3 equal width columns each taking 1 fraction(portion) available space */
+        grid-template-columns: 1fr;
+    
+  
+  }
+
+}
+
+
 
 .video-container {
     width: 100%; /* Set width to 100% */
@@ -319,8 +345,83 @@ border-radius: 30px;
    height: 40px 40px;
    width: 60px 60px;
    display: grid;
-    
+   grid-template-columns: repeat(3,1fr); 
    
    
     
+}
+
+.footers-grid{
+    padding: 50px 0;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #1f1f1f;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.footers-card{
+    
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    box-sizing: border-box;
+    
+}
+
+.footers-grid p{
+    text-align: center;
+    
+    padding: 10px;
+
+}
+.footers-card h3{
+    color: white;
+    font-size: 26px;
+    font-family: sans-serif;
+}
+.footers-card ul{
+    padding: 10px;
+    color: white;
+}
+.footers-card h4{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+.footer p{
+   font-size: 16px;
+   color: white;
+   text-align: center;
+   margin-top: 0px;
+   background-color: #1f1f1f;
+   margin-bottom: 30px;
+   
+    
+}
+@media(max-width: 768px){
+    .footers-grid{
+        gap: 20px;
+        display: grid;
+        /*  grid means dividing a web page into columns and rown building a structure grid-template-columns: repeat(3, 1fr); grid template columns defines column structure of a grid by specifying the number and size of columns here 3 means we are creating 3 equal width columns each taking 1 fraction(portion) available space */
+        grid-template-columns: repeat(3,1fr);
+        
+    
+  
+  }
+}
+@media(max-width: 500px){
+    .footers-grid{
+        gap: 20px;
+        display: grid;
+        /*  grid means dividing a web page into columns and rown building a structure grid-template-columns: repeat(3, 1fr); grid template columns defines column structure of a grid by specifying the number and size of columns here 3 means we are creating 3 equal width columns each taking 1 fraction(portion) available space */
+        grid-template-columns: 1fr;
+    
+  
+  }
+  
 }
