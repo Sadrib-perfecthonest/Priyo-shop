@@ -338,14 +338,15 @@ color: black;
 .contents-below button{
 border-radius: 30px;
    border: none;
-   padding: 10px;
+   padding: 20px;
    cursor: pointer;
    background-color:white;
    color:  #EE2F47;
-   height: 40px 40px;
-   width: 60px 60px;
+   margin-left: 900px;
+   margin-top: auto;
+
    display: grid;
-   grid-template-columns: repeat(3,1fr); 
+   grid-template-columns: repeat(1,1fr); 
    
    
     
@@ -380,10 +381,19 @@ border-radius: 30px;
     color: white;
     font-size: 26px;
     font-family: sans-serif;
+    text-align: center;
 }
+.footers-card h5{
+    color: white;
+    font-size: 26px;
+    font-family: sans-serif;
+    
+}
+
 .footers-card ul{
     padding: 10px;
     color: white;
+    
 }
 .footers-card h4{
     padding: 10px;
